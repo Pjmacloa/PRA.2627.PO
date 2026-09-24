@@ -1,11 +1,9 @@
 #include <stdio.h>
+#include "RoboticArm.h"
 
-class RoboticArm{
-	private
-		double x,y,z;
-		bool hold;
-	public
-	RoboticArm(double x, double y, double z, bool hold){
+
+RoboticArm::RoboticArm(double x, double y, double z, bool hold){
+
 		this -> x = x;
 		this -> y = y;
 		this -> z = z;
@@ -13,26 +11,26 @@ class RoboticArm{
 	}
 	
 
-	double getX(){
+	double RoboticArm::getX(){
 		return x;}
-	double getX(){
+	double RoboticArm::getY(){
                 return y;}
-	double getX(){
+	double RoboticArm::getZ(){
                 return z;}
-	bool Is_holding(){
+	bool RoboticArm::Is_holding(){
                 return hold;}
-	void grab(){
+	void RoboticArm::grab(){
 		hold = true;
 	}
-	void release(){
+	void RoboticArm::release(){
 		hold = false;
 	}
-	void move(double x, double y, double z,){
+	void RoboticArm::move(double x, double y, double z){
 		this -> x = x;
                 this -> y = y;
                 this -> z = z;
 	}
-};
+
 
 
 

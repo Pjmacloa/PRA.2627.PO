@@ -1,7 +1,7 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-class Robot {
+class RoboticArm {
 private:
     double x;
     double y;
@@ -10,7 +10,7 @@ private:
 
 public:
     // Constructor
-    Robot(double x, double y, double z, bool sujetando);
+    RoboticArm(double x, double y, double z, bool sujetando);
 
     // Métodos consultores
     double getX();
